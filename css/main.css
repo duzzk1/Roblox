@@ -7,14 +7,18 @@ body {
   color: white;
 }
 
-header .menu__Cima {
+header {
+  position: fixed;
   width: 100%;
   height: 40px;
   background-color: #191b1d;
   border: solid #111214;
   border-width: 0 0 1px;
-  display: flex;
   align-items: center;
+}
+
+header .menu__Cima {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -76,7 +80,7 @@ ul {
 
 .menu__Cima_Direita {
   display: flex;
-  gap: 5px;
+  gap: 15px;
   overflow: hidden;
   align-items: center;
 }
@@ -88,7 +92,7 @@ ul {
 .div_User {
   background-color: aliceblue;
   width: 30px;
-  height: 100%;
+  height: 80%;
   border-radius: 50%;
 }
 
@@ -102,4 +106,28 @@ ul {
 .classIdade {
   font-size: 10px;
   color: gray;
+}
+
+.robux {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+main {
+  width: 100%;
+  height: 3502px;
+}
+
+@media (max-width: 900px) {
+  .div_User {
+    display: none;
+  }
+
+  #icon_User {
+    display: none;
+  }
+  .menu_Cima-Baixo {
+    display: none;
+  }
 }
